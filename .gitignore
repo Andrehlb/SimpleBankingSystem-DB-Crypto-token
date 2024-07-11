@@ -1,0 +1,23 @@
+# .gitignore
+
+__pycache__/
+*.py[cod]
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+# Diretórios de ambiente virtual
+
+venv/
+ENV/
+
+# Arquivos de PyCharm
+
+.idea/
+
+# Arquivos do banco de dados SQLite
+
+*.SQLite3
