@@ -15,12 +15,22 @@ def depositar(self, valor):
     self.extrato.append({"tipo": "Deposito", "valor": valor, "data": datetime.date.today()})
 
 def sacar(self, valor):
-    if self.saques.diario < 3 and valor <= 500 and self.saldo >= valor:
+    if self.data_ultimo_saque != datetime.date.today():
+        self.saques_diarios = 0
+    if self.saques.diario == 2 and valor <= 500 and self.saldo >= valor:
+        print("Aviso: este é seu último saque permitido para hoje.")
         self.saldo -= valor
         self.saques_diarios += 1
         self.data_ultimo_saque = datetime.date.today()
         self.extrato.append({"tipo": "Saque", "valor": valor, "data": datetime.date.today()})
     else:
         print("Saque não permitido.")
+    
+def ve_extrato(self):
+    for transacao in self.extrato:
+        print(f"{transacao['data']}: {transacao['tipo']} de R$ {transacao['valor']:2.f}")
+    print(f"Saldo atual: R$ {self.saldo:2.f}")
+
+
 
 
