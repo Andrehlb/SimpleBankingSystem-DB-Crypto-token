@@ -20,7 +20,7 @@ def sacar(self, valor):
         self.saques_diarios += 1
         self.data_ultimo_saque = datetime.date.today()
         self.extrato.append({"tipo": "Saque", "valor": valor, "data": datetime.date.today()})
-    else
+    else:
         print("Saque não permitido.")
 
 
