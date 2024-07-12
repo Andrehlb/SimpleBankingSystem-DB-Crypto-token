@@ -31,8 +31,30 @@ class Usuario:
     def ve_extrato(self):
         for transacao in self.extrato:
             print(f"{transacao['data']}: {transacao['tipo']} de R$ {transacao['valor']:2.f}")
-        print(f"Saldo atual: R$ {self.saldo:2.f}")
+        print(f"Saldo atual: R$ {self.saldo:, .2f}")
 
+def main():
+    usuario = Usuario()
 
+    while True:
+        print("1. Depositar")
+        print("2. Sacar")
+        print("3. Ver extrato")
+        print("4. Sair")
+        opcao = int(input("Escolha uma opção: "))
+        if opcao == 1:
+            valor = float(input("Digite o valor para depósito: "))
+            usuario.depositar(valor)
+        elif opcao == 2:
+            valor = float(input("Digite o valor a sacar: "))
+            usuario.sacar(valor)
+        elif opcao == 3:
+            usuario.ve_extrato()
+        elif opcao == 4:
+            break
+        else:
+            print("Opção inválida. Tente novamente.")
 
+if __name__ == "__main__":
+    main()
 
