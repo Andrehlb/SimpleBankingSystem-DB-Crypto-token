@@ -10,7 +10,7 @@ class Usuario:
         self.saldo = 0
         self.extrato = []
         self.saques_diarios = 0
-        self.data_último_saque = datetime.date.today()
+        self.data_ultimo_saque = datetime.date.today()
 
     def depositar(self, valor):
         self.saldo += valor
