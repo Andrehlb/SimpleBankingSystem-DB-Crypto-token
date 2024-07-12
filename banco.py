@@ -40,12 +40,17 @@ def main():
     while True:
         # Exibição do saldo do usuário antes das opções
         print("Seu saldo atual é: R$", usuario.saldo)
-        
+
         print("1. Depositar")
         print("2. Sacar")
         print("3. Ver extrato")
         print("4. Sair")
-        opcao = int(input("Escolha uma opção: "))
+        try:
+            opcao = int(input("Escolha uma opção: "))
+        except ValueError:
+            print("Você digitou algo que não é uma opção. Por favor, tente novamente.")
+            continue
+        
         if opcao == 1:
             valor = float(input("Digite o valor para depósito: "))
             usuario.depositar(valor)
