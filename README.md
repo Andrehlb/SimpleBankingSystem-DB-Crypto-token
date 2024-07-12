@@ -9,7 +9,13 @@ Este projeto é um sistema bancário simples que permite ao usuário realizar op
 1. **Depósito**: O usuário pode depositar qualquer valor positivo na conta. Todos os depósitos são registrados e exibidos no extrato.
 2. **Saque**: O usuário pode realizar até 3 saques por dia com um limite máximo de R$ 500,00 por saque. Se o usuário não tiver saldo suficiente, será exibida uma mensagem informando que o saque não é possível. Todos os saques são registrados e exibidos no extrato.
 3. **Extrato**: O usuário pode visualizar todas as transações realizadas na conta, incluindo depósitos e saques. O saldo atual da conta também é exibido.
-
+4. **Menu de opções**: o usuário terá um menu com 4 opções:
+```
+1. Depositar
+2. Sacar
+3. Ver extrato
+4. Sair
+```
 ## Como Usar
 Para usar este sistema bancário simples, você precisa seguir estas etapas:
 1. Clone o repositório para o seu computador local.
