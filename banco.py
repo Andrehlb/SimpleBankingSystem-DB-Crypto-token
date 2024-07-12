@@ -19,8 +19,9 @@ class Usuario:
     def sacar(self, valor):
         if self.data_ultimo_saque != datetime.date.today():
             self.saques_diarios = 0
-        if self.saques_diarios == 2 and valor <= 500 and self.saldo >= valor:
-            print("Aviso: este é seu último saque permitido para hoje.")
+        if self.saques_diarios < 10 and valor <= 500 and self.saldo >= valor:
+            if self.saques_diarios == 1:
+                print("Aviso: este é seu último saque permitido para hoje.")
             self.saldo -= valor
             self.saques_diarios += 1
             self.data_ultimo_saque = datetime.date.today()
