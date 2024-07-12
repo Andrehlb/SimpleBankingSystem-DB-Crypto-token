@@ -20,6 +20,8 @@ Acima do menu será exibida a mensagem com o saldo atualizado do usuário. <br>
 Caso o usuário digite algo diferente das opções do menu, uma mensagem de alerta para reafzer a operação será exibida.
 Será exibido, a partir do primeiro saue, um aviso sobre o número de saques feito pelo usuário.
 
+![Menu de opções do usuário](./images/menuOpcoesUserBank.png)
+
 
 ## Como Usar
 Para usar este sistema bancário simples, você precisa seguir estas etapas:
