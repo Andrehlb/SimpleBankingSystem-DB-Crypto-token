@@ -16,6 +16,11 @@ Este projeto é um sistema bancário simples que permite ao usuário realizar op
 3. Ver extrato
 4. Sair
 ```
+Acima do menu será exibida a mensagem com o saldo atualizado do usuário. <br>
+Caso o usuário digite algo diferente das opções do menu, uma mensagem de alerta para reafzer a operação será exibida.
+Será exibido, a partir do primeiro saue, um aviso sobre o número de saques feito pelo usuário.
+
+
 ## Como Usar
 Para usar este sistema bancário simples, você precisa seguir estas etapas:
 1. Clone o repositório para o seu computador local.
