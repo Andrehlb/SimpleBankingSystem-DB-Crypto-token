@@ -30,7 +30,7 @@ class Usuario:
         
     def ve_extrato(self):
         for transacao in self.extrato:
-            print(f"{transacao['data']}: {transacao['tipo']} de R$ {transacao['valor']:2.f}")
+            print(f"{transacao['data']}: {transacao['tipo']} de R$ {transacao['valor']:, .2f}")
         print(f"Saldo atual: R$ {self.saldo:, .2f}")
 
 def main():
@@ -57,4 +57,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
