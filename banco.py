@@ -38,6 +38,9 @@ def main():
     usuario = Usuario()
 
     while True:
+        # Exibição do saldo do usuário antes das opções
+        print("Seu saldo atual é: R$", usuario.saldo)
+        
         print("1. Depositar")
         print("2. Sacar")
         print("3. Ver extrato")
