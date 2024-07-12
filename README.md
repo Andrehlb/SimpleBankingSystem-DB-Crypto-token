@@ -25,7 +25,7 @@ Será exibido, a partir do primeiro saue, um aviso sobre o número de saques fei
 Para usar este sistema bancário simples, você precisa seguir estas etapas:
 1. Clone o repositório para o seu computador local.
 2. Navegue até a pasta do projeto.
-3. Execute o arquivo `banco.py`.
+3. Execute o arquivo `python .\banco.py`.
 
 ## Próximos Passos
 Após a implementação inicial do projeto, planejamos adicionar as seguintes melhorias e recursos:
