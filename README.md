@@ -22,7 +22,6 @@ Será exibido, a partir do primeiro saue, um aviso sobre o número de saques fei
 
 ![Menu de opções do usuário](./images/menuOpcoesUserBank.png)
 
-
 ## Como Usar
 Para usar este sistema bancário simples, você precisa seguir estas etapas:
 1. Clone o repositório para o seu computador local.
