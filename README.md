@@ -20,6 +20,12 @@ Será exibido, a partir do primeiro saue, um aviso sobre o número de saques fei
 
 ![Menu de opções do usuário](./images/menuOpcoesUserBank.png)
 
+## Diferenciais
+
+1. **Controle de Saques Diários**: O sistema limita o usuário a realizar apenas 3 saques por dia com um limite máximo de R$ 500,00 por saque, adicionando uma camada extra de segurança à conta do usuário.
+2. **Exibição de Saldo Antes das Opções**: Antes de apresentar o menu de opções ao usuário, o sistema exibe o saldo atual da conta, fornecendo ao usuário uma visão clara de seu saldo antes de realizar qualquer operação.
+3. **Validação de Entrada Robusta**: O sistema inclui várias verificações para garantir que a entrada do usuário seja válida, melhorando a experiência do usuário.
+
 ## Como Usar
 Para usar este sistema bancário simples, você precisa seguir estas etapas:
 1. Clone o repositório para o seu computador local.
