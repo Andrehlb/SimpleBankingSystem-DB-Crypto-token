@@ -1,5 +1,3 @@
-🚧Em construção🚧 
-
 # Sistema Bancário Simples
 
 ## Descrição do Projeto
