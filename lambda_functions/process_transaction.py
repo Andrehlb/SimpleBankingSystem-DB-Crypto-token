@@ -1,7 +1,7 @@
 import json
 def lambda_handler(event, context):
     #aqui simula processamento de transação
-    transaction = event("transaction", {})
+    transaction = event.get("transaction", {})
     user_id = transaction.get("user_id", "unknown")
     amount = transaction.get("amount", 0)
 
@@ -10,10 +10,10 @@ def lambda_handler(event, context):
         "status": "success",
         "user_id": user_id,
         "processed_amount": amount,
-        "message": "A transação foi feita co sucesso"
+        "message": "A transação foi feita com sucesso"
     }
 
     return {
         "statusCode": 200,
-        "body": json.dumps(response)
+        "body": json.dumps(response, ensure_ascii=False)
     }
