@@ -39,3 +39,81 @@ Após a implementação inicial do projeto, planejamos adicionar as seguintes me
 2. **Interface do Usuário**: Desenvolver uma interface gráfica para tornar o sistema mais fácil de usar.
 3. **Autenticação e Segurança**: Adicionar autenticação para proteger as informações do usuário e criptografia para garantir a segurança dos dados.
 4. **Testes**: Escrever testes unitários para garantir que todas as funcionalidades estejam funcionando corretamente.
+
+
+## 📂 Estrutura do Projeto
+
+O projeto está organizado da seguinte forma:
+
+```
+SimpleBankingSystem/
+│── backend/                   # Tudo relacionado ao backend (AWS Lambda, API, lógica do servidor)
+│   ├── lambda_functions/      # Código das funções Lambda
+│   │   ├── process_transaction.py
+│   │   ├── function.zip
+│   │   └── banco.py
+│   ├── tests/                 # Testes unitários e de integração
+│   ├── database/              # Scripts de banco de dados (se necessário)
+│   ├── serverless.yml         # Configuração do Serverless Framework
+│   └── README.md
+│
+│── frontend/                  # Tudo relacionado ao frontend (HTML, CSS, JS)
+│   ├── assets/                # Arquivos estáticos (imagens, ícones, fontes)
+│   ├── styles/                # Arquivos CSS
+│   ├── scripts/               # Arquivos JavaScript
+│   ├── index.html             # Página principal
+│   ├── dashboard.html         # Página do dashboard bancário
+│   ├── chatbot.html           # Página do assistente bancário com IA
+│   └── README.md
+│
+│── docs/                      # Documentação do projeto
+│── .gitignore                 # Arquivos que não devem ser versionados no Git
+│── README.md                  # Documentação geral do projeto
+│── requirements.txt            # Dependências do projeto (caso use Python)
+│── package.json                # Dependências do projeto (caso use Node.js)
+│── serverless.yml              # Configuração do Serverless Framework
+│── config/                     # Arquivos de configuração geral
+```
+
+**📌Descrição das Pastas e Arquivos:**
+
+- **backend/**: Contém todo o código relacionado ao servidor, incluindo funções AWS Lambda, testes e scripts de banco de dados.
+  - **lambda_functions/**: Diretório específico para as funções Lambda.
+    - `process_transaction.py`: Função Lambda para processar transações.
+    - `function.zip`: Arquivo zipado da função para deploy.
+    - `banco.py`: Código relacionado às operações bancárias.
+  - **tests/**: Testes unitários e de integração para garantir a qualidade do código.
+  - **database/**: Scripts para configuração e manutenção do banco de dados, se aplicável.
+  - `serverless.yml`: Arquivo de configuração para o Serverless Framework.
+  - `README.md`: Documentação específica do backend.
+
+- **frontend/**: Contém a interface do usuário, incluindo arquivos HTML, CSS e JavaScript.
+  - **assets/**: Arquivos estáticos como imagens, ícones e fontes.
+  - **styles/**: Arquivos CSS para estilização das páginas.
+  - **scripts/**: Arquivos JavaScript para interatividade das páginas.
+  - `index.html`: Página principal do sistema bancário.
+  - `dashboard.html`: Página do dashboard bancário.
+  - `chatbot.html`: Página do assistente bancário com IA.
+  - `README.md`: Documentação específica do frontend.
+
+- **docs/**: Documentação geral do projeto, incluindo manuais, diagramas e notas técnicas.
+
+- **.gitignore**: Especifica quais arquivos e pastas o Git deve ignorar.
+
+- **README.md**: Documentação geral do projeto, fornecendo uma visão geral e instruções básicas.
+
+- **requirements.txt**: Lista de dependências do projeto para ambientes Python.
+
+- **package.json**: Lista de dependências do projeto para ambientes Node.js.
+
+- **serverless.yml**: Arquivo de configuração para o Serverless Framework, facilitando o deploy de funções Lambda e outros recursos.
+
+- **config/**: Arquivos de configuração geral do projeto.
+
+---
+
+**Nota:** Esta estrutura é projetada para ser escalável e de fácil manutenção, seguindo as melhores práticas adotadas por grandes empresas de tecnologia.
+
+---
+
+Para mais detalhes sobre cada componente, consulte as seções correspondentes neste `README.md`.
