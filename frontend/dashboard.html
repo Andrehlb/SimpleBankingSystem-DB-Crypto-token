@@ -5,54 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Bancário</title>
     <style>
+        /* Paleta de cores, Design e Fontes Premium */
+        :root {
+            --primary-color: #6A11CB; /* Roxo elegante; #1A1A2E Azul X */
+            --secondary-color:#f5f5f5; /* #2575FC Azul premium; #16213E Azul Y */
+            --accent-color: #00A86B; /* Verde sofisticado; #F9A826 Amarelo premium */
+            /* background: #F8F9FD; */
+            --text-color: #222; /* #EAEAEA */
+            --card-bg: rgba(255, 255, 255, 0.15);
+            /* --text-dark: #1A1A2E;
+            --text-light: #EAEAEA; */
+            
+        }
+
+        /* Estilos Gerais */
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Poppins" sans-serif;
+            background: linear-gradient(to right, #6A0DAD, #4B0082);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
         }
 
         .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background: white;
+            max-width: 360px;
             padding: 20px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            text-align: center;
         }
 
         h1 {
-            color: #333;
+            font-size: 24px;
+            font-weight: bold; /* 600 */
+            margin-bottom: 10px;
+            color: white;
         }
 
         .saldo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #007bff;
-            margin-bottom: 20px;
+            font-size: 32px;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-size: 27px;
+            color: white;
+            /* font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 20px; */
         }
 
+        /* Bottom com animação */
         .btn {
             display: inline-block;
-            padding: 10px 20px;
-            margin-top: 15px;
-            text-decoration: none;
-            background-color: #28a745;
+            background: var(--accent-color);
             color: white;
-            border-radius: 5px;
+            padding: 12px 24px;
+            /* margin-top: 15px; */
+            border-radius: 12px;
+            text-decoration: none;
             font-size: 16px;
+            font-weight: bold;
+            transition: 0.4s;
+            box-shadow: 0 4px 10px rgba(0, 168, 107, 0.4);
+            /* background-color: #28a745; */
+            /* color: white;
+            font-size: 16px; */
         }
 
         .btn:hover {
-            background-color: #218838;
+            background-color: #008F5A; /* #218838 */
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 168, 107, 0.5);
+
         }
+
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>💰 Painel Bancário</h1>
+        <h1>💎 Painel Bancário</h1>
         <p class="saldo">Saldo: R$ 5.000,00</p>
 
         <div class="info">📌 Saldo Reservado: R$ 1.200,00</div> 
@@ -61,6 +98,6 @@
         <a href="#" class="btn">Ver Detalhes</a>
     </div>
 
-    
+
 </body>
 </html>
