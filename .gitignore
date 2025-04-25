@@ -1,7 +1,12 @@
 # .gitignore
 
+# Arquivos de configuração do sistema operacional (locais)
 __pycache__/
+.mypy__cache/
 *.py[cod]
+*pyc
+instance/
+*.env
 *.log
 *.csv
 *.dat
@@ -9,10 +14,22 @@ __pycache__/
 *.pid
 *.gz
 
+# Logs
+*.log
+
+# VSCode settings
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
 # Diretórios de ambiente virtual
 
 venv/
 ENV/
+.env/
+env/
 
 # Arquivos de PyCharm
 
@@ -21,3 +38,4 @@ ENV/
 # Arquivos do banco de dados SQLite
 
 *.SQLite3
+*.db
