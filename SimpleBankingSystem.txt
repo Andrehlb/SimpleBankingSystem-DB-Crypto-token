@@ -1,0 +1,27 @@
+SimpleBankingSystem/
+│── backend/                   # Tudo relacionado ao backend (AWS Lambda, API, lógica do servidor)
+│   ├── lambda_functions/      # Código das funções Lambda
+│   │   ├── process_transaction.py
+│   │   ├── function.zip
+│   │   └── banco.py
+│   ├── tests/                 # Testes unitários e de integração
+│   ├── database/              # Scripts de banco de dados (se necessário)
+│   ├── serverless.yml         # Configuração do Serverless Framework
+│   └── README.md
+│
+│── frontend/                  # Tudo relacionado ao frontend (HTML, CSS, JS)
+│   ├── assets/                # Arquivos estáticos (imagens, ícones, fontes)
+│   ├── styles/                # Arquivos CSS
+│   ├── scripts/               # Arquivos JavaScript
+│   ├── index.html             # Página principal
+│   ├── dashboard.html         # Página do dashboard bancário
+│   ├── chatbot.html           # Página do assistente bancário com IA
+│   └── README.md
+│
+│── docs/                      # Documentação do projeto
+│── .gitignore                 # Arquivos que não devem ser versionados no Git
+│── README.md                  # Documentação geral do projeto
+│── requirements.txt            # Dependências do projeto (caso use Python)
+│── package.json                # Dependências do projeto (caso use Node.js)
+│── serverless.yml              # Configuração do Serverless Framework
+│── config/                     # Arquivos de configuração geral

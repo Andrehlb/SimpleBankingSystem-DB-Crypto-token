@@ -1,4 +1,4 @@
-# Sistema Bancário Simples
+# Sistema Bancário (Bank System)
 
 ## Descrição do Projeto
 Este projeto é um sistema bancário simples que permite ao usuário realizar operações básicas como depósitos, saques e visualização de extrato.
@@ -46,8 +46,15 @@ Após a implementação inicial do projeto, planejamos adicionar as seguintes me
 O projeto está organizado da seguinte forma:
 
 ```
-SimpleBankingSystem/
+SimpleBankingSystem-DB-Crypto-token/
 │── backend/                   # Tudo relacionado ao backend (AWS Lambda, API, lógica do servidor)
+|   ├── app.py             ← executa o servidor
+    ├── config.py          ← configs gerais (como o banco de dados)
+    ├── database/
+    │   ├── __init__.py    ← inicializa o banco com SQLAlchemy
+    │   └── models.py      ← define a tabela Transaction
+    ├── routes.py          ← define os endpoints da API
+    └── README.md
 │   ├── lambda_functions/      # Código das funções Lambda
 │   │   ├── process_transaction.py
 │   │   ├── function.zip
